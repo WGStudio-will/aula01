@@ -44,6 +44,31 @@ CREATE TABLE estoque(
 	PRIMARY KEY(loja,produto)
 );
 
+INSERT INTO loja(codigo, nome, endereco,telefone) VALUES
+(1,'matriz','marechal deodoro da fonsec, 755 sala 01','47 995 280019');
+
+INSERT INTO loja(codigo, nome, endereco,telefone) VALUES
+(2,'filial1','marechal deodoro da fonsec, 755 sala 01','47 995 280019');
+
+INSERT INTO produto(codigo, nome, descricao,preco,tipo,categoria,datalancamento,decontousado) VALUES
+(1,'caderno','caderno 24 materias',24.99,'novo','Acessorios,Eletrodomesticos','2026-03-17 16:51:25',0);
+
+INSERT INTO produto(codigo, nome, descricao,preco,tipo,categoria,datalancamento,decontousado) VALUES
+(2,'caneta','azul',0.55,'novo','Acessorios','2026-03-17 16:51:25',0);
+
+
+INSERT INTO produto(codigo, nome, descricao,preco,tipo,categoria,datalancamento,decontousado) VALUES
+(3,'borracha','divertida',6,'novo','Acessorios','2026-03-17 16:51:25',0);
+
+
+INSERT INTO produto(codigo, nome, descricao,preco,tipo,categoria,datalancamento,decontousado) VALUES
+(4,'regua','30 cm',2.65,'novo','Acessorios','2026-03-17 16:51:25',0);
+
+
+INSERT INTO produto(codigo, nome, descricao,preco,tipo,categoria,datalancamento,decontousado) VALUES
+(5,'caneca','canecao',14,'novo','Acessorios','2026-03-17 16:51:25',0);
+
+INSERT INTO estoque(loja,produto,quantidade) values(1,4,50);
 
 
 
