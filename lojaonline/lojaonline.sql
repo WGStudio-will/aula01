@@ -38,6 +38,7 @@ CREATE TABLE produtoCaracteristica(
 CREATE TABLE estoque(
 	loja INT,
 	produto INT,
+	quantidade INT,
 	FOREIGN KEY(loja) REFERENCES loja(codigo),
 	FOREIGN KEY(produto) REFERENCES produto (codigo),
 	PRIMARY KEY(loja,produto)
